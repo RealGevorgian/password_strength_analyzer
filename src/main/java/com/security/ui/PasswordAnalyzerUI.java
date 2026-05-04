@@ -72,7 +72,7 @@ public class PasswordAnalyzerUI extends JFrame{
 
         resultArea = new JTextArea();
         resultArea.setEditable(false);
-        resultArea.setFont(new Font("Monospaced", Font.PLAIN, 13));
+        resultArea.setFont(new Font("Monospaced", Font.PLAIN, 16));
         resultArea.setBackground(new Color(20, 20, 20));
         resultArea.setForeground(TEXT_COLOR);
 
@@ -153,7 +153,7 @@ public class PasswordAnalyzerUI extends JFrame{
                 "Strength: " + result.getStrength() + "\n" +
                         "Score: " + result.getScore() + "/100\n" +
                         "Entropy: " + String.format("%.2f", result.getEntropy()) + " bits\n" +
-                        "Crack Time: " + crackTime + "\n" +
+                        "Approximate Crack Time: " + crackTime + "\n" +
                         "Attack Type: " + result.getAttackType() + "\n" +
                         "Feedback: " + result.getFeedback() + "\n\n" +
                         "Reuse Risk: " + reuseMessage
